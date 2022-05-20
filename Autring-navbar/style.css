@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+    background: #F5DB3C;
+    font-family:'Faustina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+ .navbar li{
+     margin-right: 33px;
+}
+
+.navbar li a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.navbar li a:hover{
+    color: red;
+    
+}
+
+.home-icon{
+    font-size: 25px;
+    color: red;
+}
+
