@@ -19,7 +19,7 @@
 
 }
 
-.navbar ul{
+.nav-ul{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -28,23 +28,51 @@
     
     
 }
- .navbar li{
+.nav-item{
      margin-right: 33px;
 }
 
-.navbar li a{
+.nav-item a{
     color: black;
     text-decoration: none;
     
 }
 
-.navbar li a:hover{
+.nav-ul  a:hover{
     color: red;
     
 }
 
 .home-icon{
     font-size: 25px;
-    color: red;
+    color: black;
+}
+.nav-dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-ul{
+    width: 168px;
+    height: 320px;
+    display: none;
+    position: absolute;
+    left: -30px;
+    top: 28px;
+    list-style: none;
+    color: #FBFBFB;
+    background-color: #000;
+    text-align: center;
+    border-radius: 14px;
+    font-family: "Faustina";
+    font-size: 14px;
+    font-weight: 400;
+
 }
 
+.dropdown-item {
+    margin: 8px;
+}
+
+.nav-dropdown:hover .dropdown-ul{
+    display: block;
+}
