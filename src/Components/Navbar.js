@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div class="navbar">
+    <div className="navbar">
         <ul>
-            <li><a href="#"><i class="fa-solid fa-house home-icon"></i></a></li>
+            <li><a href="#"><i className="fa-solid fa-house home-icon"></i></a></li>
             <li><a href="#">INDIA</a></li>
             <li><a href="#">INTERNATIONAL</a></li>
             <li><a href="#">POLITICAL</a></li>
@@ -14,7 +14,7 @@ function Navbar() {
             <li><a href="#">SCIENCE&TECH</a></li>
             <li><a href="#">VIDEOS</a></li>
             <li><a href="#">GET INVOVED</a></li>
-         <li><a href="#"><img src="./icon/Path 41.svg" alt=""/></a></li>
+            <li><a href="#" className='search_btn'><i className="fa-solid fa-magnifying-glass"></i></a></li>
            
         </ul>
 
