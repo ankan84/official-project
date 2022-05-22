@@ -8,7 +8,7 @@
   height: 50px;
   width: 100%;
   background: #F5DB3C;
-  font-family:'Faustina';
+  
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -24,12 +24,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left:-50px;
 
   
   
 }
 .nav-item{
    margin-right: 33px;
+   padding: 0px 1px;
+   font-weight: 600;
 }
 
 .nav-item a{
