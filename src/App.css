@@ -152,3 +152,73 @@
   height: 310px;
 }
 
+
+/* section 2 card */
+.card-section2{
+  margin-left: 3px;
+  margin-right: 3px;
+
+}
+
+.card-section2 h6{
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0px;
+  
+
+}
+.card-body-section2{
+  width:230px;
+  margin-left: 3px;
+  /* border:1px solid red; */
+}
+.card-body-section2 p{
+  font-size: 12px;
+}
+
+.card-section2-main{
+
+  max-width:66rem;
+  height:300px;
+  margin-left: 20px;
+  box-shadow: 3px -1px 10px -1px rgba(89, 84, 84, 0.3);
+
+}
+
+
+/* section4 */
+
+.card-section4-left{
+  margin:4px 4px;
+  
+  
+}
+.card-section4-left-main{
+  
+  box-sizing: 3px -1px 10px -1px rgba(89, 84, 84, 0.3);
+}
+.card-section4-left-main h6{
+     font-size: 13px;
+     font-weight: 600;
+}
+
+.section4-right-main{
+  
+  box-sizing: 3px -1px 10px -1px rgba(89, 84, 84, 0.3);
+}
+
+/* section5 */
+
+.card-section5-text{
+  font-size: 11px;
+  font-weight: 600;
+}
+.card-section5-img{
+  margin-left: 5px;
+}
+
+.card-section5-main{
+  
+  width: 330px;
+  box-shadow: 3px -1px 10px -1px rgba(89, 84, 84, 0.3);
+}
