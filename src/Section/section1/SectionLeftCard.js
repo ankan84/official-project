@@ -1,7 +1,13 @@
 import React from 'react'
 
 function SectionLeftCard(props) {
-    
+    const isText=( s)=>{
+      if(s==null)return s;
+      else if(s.length>=95) return s.substring(0,95);
+      else return s;
+      
+
+    }
     return (
         
         <section className='top-heading'  style={{
@@ -19,10 +25,10 @@ function SectionLeftCard(props) {
                     }}>
                         <img src={props.data[0].urlToImage} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h6 className="card-title">{props.data[0].title.substring(0,110)}</h6>
+                            <h6 className="card-title">{isText(props.data[0].title)}</h6>
                             <span ><i className="fa-solid fa-circle-user"></i><span className="logo-text">{props.data[0].author}</span>
                             </span>
-                            <p className="card-text my-2">{props.data[0].description.substring(0, 120)}...</p>
+                            <p className="card-text my-2">{isText(props.data[0].description)}...</p>
                             
 
                         </div>
@@ -33,25 +39,25 @@ function SectionLeftCard(props) {
 
                     <div className=" card-right">
                         <div className="card-body right-card">
-                            <p>{props.data[1].title.substring(0,95)}</p>
+                            <p>{isText(props.data[1].title)}</p>
                             <span className='card-logo'><i className="fa-solid fa-circle-user"></i> <span className="logo-text">{props.data[1].author}</span></span>
                         </div>
                     </div>
                     <div className=" my-2 card-right">
                         <div className="card-body right-card">
-                            <p>{props.data[2].title.substring(0,95)}</p>
+                            <p>{isText(props.data[2].title)}</p>
                             <span className='card-logo'><i className="fa-solid fa-circle-user"></i> <span className="logo-text">{props.data[2].author}</span></span>
                         </div>
                     </div>
                     <div className="my-2 card-right">
                         <div className="card-body right-card">
-                            <p>{props.data[3].title.substring(0,95)}</p>
+                            <p>{isText(props.data[3].title)}</p>
                             <span className='card-logo'><i className="fa-solid fa-circle-user"></i> <span className="logo-text">{props.data[3].author}</span></span>
                         </div>
                     </div>
                     <div className=" my-2 card-right">
                         <div className="card-body right-card">
-                            <p>{props.data[4].title.substring(0,95)}
+                            <p>{isText(props.data[4].title)}
                             </p>
                             <span className='card-logo'><i className="fa-solid fa-circle-user"></i><span className="logo-text">{props.data[4].author}</span></span>
                         </div>
@@ -59,7 +65,7 @@ function SectionLeftCard(props) {
 
                     <div className="my-2 card-right">
                         <div className="card-body right-card">
-                            <p>{props.data[5].title.substring(0,95)}
+                            <p>{isText(props.data[5].title)}
                             </p>
                             <span className='card-logo'><i className="fa-solid fa-circle-user"></i><span className="logo-text">{props.data[5].author}</span></span>
 
