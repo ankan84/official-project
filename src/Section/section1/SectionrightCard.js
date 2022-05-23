@@ -1,23 +1,25 @@
 import React from 'react'
 
-function SectionrightCard() {
+function SectionrightCard(props) {
     return (
         <div className="pov-card" style={{ }}>
             <h4 style={{ fontSize: "15px", marginLeft: "6px", display: "inline-block" }}>Pov <div style={{ background: "red", display: "inline-block", width: "230px", height: "5px" }}></div></h4>
+           { props.data?(
             <div className="row">
+             
                 <div className="pov-card-right col-md-12">
                     <div className='' style={{ width: "16rem",marginLeft:"10px" }}>
-                        <img src="https://static.india.com/wp-content/uploads/2022/05/Chennai-Super-Kings-vs-Kolkata-Knight-Riders.jpeg"  className='img-fluid' alt="" />
+                        <img src={props.data[6].urlToImage}  className='img-fluid' alt="" />
                         <div className="card-body">
                             <h6 className="card-title " style={{fontSize:"13px",marginLeft:"-10px"}}>
-                                Lorem ipsum perfatione, eligendi dolorem nostrum ut atque doloribus illo veniam architecto repudiandae
+                               {props.data[6].title.substring(0,110)}
                             </h6>
-                            <span className='card-logo'><i className="fa-solid fa-circle-user"></i> <span className="logo-text"> Amit raj</span></span>
+                            <span className='card-logo'><i className="fa-solid fa-circle-user"></i> <span className="logo-text">{props.data[6].author}</span></span>
                         </div>
                     </div>
                 </div>
 
-                <div className="pov-card-right-reader-editor col-md-12 my-4">
+                <div className="pov-card-right-reader-editor col-md-12" style={{marginTop:"50px"}}>
                 <div  style={{width:"18rem"}}>
                 <h4 style={{ fontSize: "15px", marginLeft: "6px", display: "inline-block" }}>Reader Editors<div style={{ background: "red", display: "inline-block", width: "150px", height: "5px",marginLeft:"3px" }}></div></h4>
                             <div style={{width:"18rem",marginLeft:"15px"}}>
@@ -29,7 +31,9 @@ function SectionrightCard() {
                             </div>
                 </div>
                 </div>
+             
             </div>
+            ):(<></>) }
 
         </div>
     )
