@@ -149,9 +149,15 @@
 .pov-card{
   box-shadow:3px -1px 10px -1px rgba(89, 84, 84, 0.3);
   width: 280px;
-  height: 310px;
+  height:300px;
+  /* min-height:7rem; */
+  /* border: 1px solid red; */
 }
 
+.pov-card-right-reader-editor{
+
+  
+}
 
 /* section 2 card */
 .card-section2{

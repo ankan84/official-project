@@ -1,6 +1,8 @@
 import React from 'react'
 
 function SectionLeftCard(props) {
+    var st="The news media or news industry are forms of mass media that focus on delivering news to the general public or a target public."
+
     const isText=( s)=>{
       if(s==null)return s;
       else if(s.length>=95) return s.substring(0,95);
@@ -8,6 +10,13 @@ function SectionLeftCard(props) {
       
 
     }
+    
+    const isDescription=( s)=>{
+        if(s==null){
+            return st;
+        }else if(s.length>=126) return s.substring(0,126);
+        else return s;
+     }
     return (
         
         <section className='top-heading'  style={{
@@ -28,7 +37,7 @@ function SectionLeftCard(props) {
                             <h6 className="card-title">{isText(props.data[0].title)}</h6>
                             <span ><i className="fa-solid fa-circle-user"></i><span className="logo-text">{props.data[0].author}</span>
                             </span>
-                            <p className="card-text my-2">{isText(props.data[0].description)}...</p>
+                            <p className="card-text my-2">{isDescription(props.data[0].description)}...</p>
                             
 
                         </div>
